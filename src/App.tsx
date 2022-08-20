@@ -18,7 +18,7 @@ function App() {
   }
   const nameList = [
     {
-      fname: 'Pavi',
+      fname: 'Pavithra',
       lname: 'Sivasamy'
     },
     {
