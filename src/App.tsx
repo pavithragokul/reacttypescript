@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Greet } from './components/props/greet';
 import { Person } from './components/props/person';
@@ -10,6 +9,8 @@ import { ReactComponentProps } from './components/props/reactComponentProps';
 import { EventProps } from './components/props/eventProps';
 import { InputProps } from './components/props/inputProps';
 import { StylingProps } from './components/props/stylingProps';
+import { LoggedIn } from './components/Hooks/loggedIn';
+import { User } from './components/Hooks/user';
 
 function App() {
   const personName = {
@@ -31,6 +32,7 @@ function App() {
     }
 
   ]
+  
   return (
     <div className="App">
       learn react
@@ -52,6 +54,9 @@ function App() {
         console.log('change event happened');
       }}/>
       <StylingProps style = {{border:'1px solid black', marginTop: '1rem' , padding: '1rem'}}/>
+      -------------------------------------------------------------------------------------------------
+      <LoggedIn />
+      <User name = "pavithra" email = "avigokul@gmail.com" />
     </div>
   );
 }
