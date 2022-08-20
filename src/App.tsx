@@ -11,6 +11,7 @@ import { InputProps } from './components/props/inputProps';
 import { StylingProps } from './components/props/stylingProps';
 import { LoggedIn } from './components/Hooks/loggedIn';
 import { User } from './components/Hooks/user';
+import { Counter } from './components/Hooks/useReducerHook/counter';
 
 function App() {
   const personName = {
@@ -57,6 +58,7 @@ function App() {
       -------------------------------------------------------------------------------------------------
       <LoggedIn />
       <User name = "pavithra" email = "avigokul@gmail.com" />
+      <Counter />
     </div>
   );
 }
