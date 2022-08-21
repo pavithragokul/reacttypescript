@@ -12,6 +12,10 @@ import { StylingProps } from './components/props/stylingProps';
 import { LoggedIn } from './components/Hooks/loggedIn';
 import { User } from './components/Hooks/user';
 import { Counter } from './components/Hooks/useReducerHook/counter';
+import { ThemeContextProvider } from './components/Hooks/useContexthook/ThemeContext';
+import { Box } from './components/Hooks/useContexthook/Box';
+import { UserContextProvider } from './components/Hooks/useContexthook/usercontext';
+import { User1 } from './components/Hooks/useContexthook/user'
 
 function App() {
   const personName = {
@@ -59,7 +63,14 @@ function App() {
       <LoggedIn />
       <User name = "pavithra" email = "avigokul@gmail.com" />
       <Counter />
+      <ThemeContextProvider >
+      <Box />
+      </ThemeContextProvider>
+      <UserContextProvider >
+        <User1 />
+      </UserContextProvider>
     </div>
+    
   );
 }
 
